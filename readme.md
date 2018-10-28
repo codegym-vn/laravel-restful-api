@@ -23,10 +23,10 @@
 ``php artisan serve``
 
 #### Sử dụng PostMan để gọi đến các API
-``GET - http://localhost:8000/api/customers/ - Để lấy toàn bộ khách hàng``
-``GET - http://localhost:8000/api/customers/{customer-ID} - Để lấy ra khách hàng theo id``
-``POST - http://localhost:8000/api/customers/ - Với dữ liệu gửi kèm là chuỗi JSON: {"first_name":"","last_name":""} - Để tạo mới khách hàng``
-``PUT - http://localhost:8000/api/customers/{customer-ID} - Với dữ liệu gửi kèm là chuỗi JSON: {"first_name":"","last_name":""} - Để cập nhật khách hàng theo ID``
-``DELETE - http://localhost:8000/api/customers/{customer-ID} - Để xóa khách hàng theo ID``
+`` - GET - http://localhost:8000/api/customers/ - Để lấy toàn bộ khách hàng.``
+`` - GET - http://localhost:8000/api/customers/{customer-ID} - Để lấy ra khách hàng theo ID.``
+`` - POST - http://localhost:8000/api/customers/ - Với dữ liệu gửi kèm là chuỗi JSON: {"first_name":"","last_name":""} - Để tạo mới khách hàng.``
+`` - PUT - http://localhost:8000/api/customers/{customer-ID} - Với dữ liệu gửi kèm là chuỗi JSON: {"first_name":"","last_name":""} - Để cập nhật khách hàng theo ID.``
+`` - DELETE - http://localhost:8000/api/customers/{customer-ID} - Để xóa khách hàng theo ID.``
 # 
 Mã nguồn Laravel-restful-api được sử dụng để thực hành tại [CodeGym](https://codegym.vn)
