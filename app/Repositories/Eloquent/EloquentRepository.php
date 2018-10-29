@@ -9,7 +9,7 @@
 namespace App\Repositories\Eloquent;
 
 
-use App\Http\Repositories\Repository;
+use App\Repositories\Repository;
 
 abstract class EloquentRepository implements Repository
 {
