@@ -1,15 +1,16 @@
 <?php
-
-namespace App\Http\Repositories\EloquentImpl;
-
-use App\Http\Repositories\Repository;
-
 /**
  * Created by PhpStorm.
  * User: dungduong
  * Date: 10/28/2018
  * Time: 1:49 PM
  */
+
+namespace App\Repositories\Eloquent;
+
+
+use App\Http\Repositories\Repository;
+
 abstract class EloquentRepository implements Repository
 {
     protected $model;

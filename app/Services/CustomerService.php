@@ -6,7 +6,7 @@
  * Time: 2:24 PM
  */
 
-namespace App\Http\Services;
+namespace App\Services;
 
 interface CustomerService
 {

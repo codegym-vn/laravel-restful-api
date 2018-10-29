@@ -6,7 +6,7 @@
  * Time: 1:42 PM
  */
 
-namespace App\Http\Repositories;
+namespace App\Repositories;
 
 
 interface CustomerRepository extends Repository

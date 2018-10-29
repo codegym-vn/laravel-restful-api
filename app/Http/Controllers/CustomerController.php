@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Services\CustomerService;
+use App\Services\CustomerService;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
@@ -16,9 +16,9 @@ class CustomerController extends Controller
 
     public function index()
     {
-        $dataCustomer = $this->customerService->getAll();
+        $customers = $this->customerService->getAll();
 
-        return response()->json($dataCustomer['customers'], $dataCustomer['statusCode']);
+        return response()->json($customers, 200);
     }
 
     public function show($id)

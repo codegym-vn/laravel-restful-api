@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Services\Impl;
+namespace App\Services\Impl;
 
-use App\Http\Repositories\CustomerRepository;
-use App\Http\Services\CustomerService;
+use App\Repositories\CustomerRepository;
+use App\Services\CustomerService;
 
 /**
  * Created by PhpStorm.
@@ -26,16 +26,7 @@ class CustomerServiceImpl implements CustomerService
     {
         $customers = $this->customerRepository->getAll();
 
-        $statusCode = 200;
-        if (!$customers)
-            $statusCode = 204;
-
-        $data = [
-            'statusCode' => $statusCode,
-            'customers' => $customers
-        ];
-
-        return $data;
+        return $customers;
     }
 
     public function findById($id)
@@ -75,16 +66,16 @@ class CustomerServiceImpl implements CustomerService
         $oldCustomer = $this->customerRepository->findById($id);
 
         if (!$oldCustomer) {
-            $customer = null;
+            $newCustomer = null;
             $statusCode = 404;
         } else {
-            $customer = $this->customerRepository->update($request, $oldCustomer);
+            $newCustomer = $this->customerRepository->update($request, $oldCustomer);
             $statusCode = 200;
         }
 
         $data = [
             'statusCode' => $statusCode,
-            'customers' => $customer
+            'customers' => $newCustomer
         ];
         return $data;
     }

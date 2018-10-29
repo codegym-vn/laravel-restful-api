@@ -7,12 +7,13 @@
  * Time: 1:46 PM
  */
 
-namespace App\Http\Repositories\EloquentImpl;
+namespace App\Repositories\Impl;
 
 use App\Customer;
-use App\Http\Repositories\CustomerRepository;
+use App\Repositories\CustomerRepository;
+use App\Repositories\Eloquent\EloquentRepository;
 
-class CustomerRepositoryImpl extends EloquentRepository implements CustomerRepository
+class CustomerRepositoryImpl extends EloquentRepository  implements CustomerRepository
 {
     /**
      * get Model

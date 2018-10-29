@@ -6,7 +6,7 @@
  * Time: 1:37 PM
  */
 
-namespace App\Http\Repositories;
+namespace App\Repositories;
 
 interface Repository
 {
